@@ -1,0 +1,506 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0em;
+}
+
+header, nav, section {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+/*---HEADER & NAVIGATION BAR---*/
+
+.top-container {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    font-size: 0.9em;
+    font-weight: 500;
+    text-decoration: none;
+    color: gray;
+    align-self: flex-end;
+    border: none;
+    padding: 2.78em;
+}
+.nav-link:hover {
+    border-top: #0065FC;
+    border-style: solid none none none;
+    border-width: 0.18em;
+    padding: 2.6em;
+    color: #0065FC;
+    align-self: flex-end;  
+}
+
+#sign-up {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #0065FC;
+    font-weight: bold;
+    align-self: flex-end;
+    padding: 2.78em;
+}
+
+/* --- PART ONE - INTRO&SEARCH --- */
+
+/* intro */
+h2 {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+#sub-intro {
+    margin-top: 5px;
+    font-weight: 300;
+    color: grey;
+    font-size: 0.8em;
+}
+
+/* search bar */
+.search-container {
+	display: flex;
+	flex-direction: row;
+    width: auto;
+    margin-bottom: 1.8em;
+}
+
+.mapmarker {
+	background-color: #F2F2F2;
+	border-radius: 1em 0 0 1em;
+	padding: 0.8em;
+	text-align: center;
+	width: 1.2em;
+}
+
+.search-box {
+	border: solid 0.06em #F2F2F2;
+	border-right: none;
+    border-left: none;
+    font-weight: 700;
+	font-size: 1em;
+    width: 12em;
+}
+
+::placeholder {
+    color: black;
+    border: none;
+}
+
+.search-container input:focus {
+    outline: none;
+}
+
+.search-button {
+	background-color: #0065fc;
+	border-left: none;
+	border-radius: 0rem 1em 1em 0;
+	color: #F2F2F2;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 1em;
+	padding: 0.8em 0.08em 0.8em 0.8em;
+	width: 4.8em;
+}
+
+.search-icon {
+	color: #0065fc;
+}
+
+/* filters*/
+.filter-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 55em;
+    margin-bottom: 1.2em;
+
+}
+
+.filter-text {
+    color: black;
+    font-weight: 700;
+    padding: 0.8em;
+}
+
+.lowcost, .family, .romantic, .pets {
+    border: solid 0.13em #F2F2F2;
+    color: initial;
+    border-radius: 2em;
+    padding-right: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.money, .child, .heart, .dog {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border: none;
+    border-radius: 3em;
+    padding: 0.8em;
+    margin-right: 1em;
+}
+
+.lowcost:hover, .family:hover, .romantic:hover, .pets:hover {
+    background-color: #DEEBFF;
+    border: solid 0.13em #DEEBFF;
+    box-shadow: 0 0 0.3em 0.03em #a3a3a3;
+}
+
+.lowcost:visited, .family:visited, .romantic:visited, .pets:visited {
+    color:initial;
+}
+
+.infocontainer {
+    display: flex;
+    flex-direction: row;
+    width: 22em;
+    margin-bottom: 1.2em;
+}
+
+/* info */
+.i {
+    color: #0065FC;
+    border: solid 0.13em #F2F2F2;
+    border-radius: 4em;
+    padding: 0.5em 0.8em;
+    font-size: 0.5em;
+    height: 1em;
+    margin-right: 1.5em;
+    align-self: center;
+}
+
+#infotext {
+    color: gray;
+    font-size: 0.8em;
+}
+
+/* --- PART TWO - ACCOMMODATIONS&MOSTPOULAR --- */
+
+.article-one-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* accommodations */
+.accommodations {
+    background-color: #F2F2F2;
+    border-radius: 2em;
+    padding: 1em 2em 2em 2em;
+    margin-bottom: 2em;
+    height: 35.5em;
+}
+
+.section-title {
+    margin-bottom: 1em;
+}
+
+.hotel-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 49.5em;
+    align-content: space-between;
+    height: 26em;
+    margin-bottom: 2.8em;
+}
+
+.hotel-link {
+    text-decoration: none;
+}
+
+.hotel:hover {
+    box-shadow: 0 0 0.5em 0.05em #3f3f3f;
+}
+
+.hotel-link:visited {
+    color: initial;
+}
+
+.hotel {
+    background-color: white;
+    width: 15.3em;
+    border-radius: 1em;
+    box-shadow: 0 0 0.5em 0.05em #a3a3a3;
+}
+.hotel-images {
+    width: 14.7em;
+    padding-top: 0.3em;
+    padding-right: 0.3em;
+    padding-left: 0.3em;
+    object-fit: cover;
+    height: 7em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    margin-bottom: -1em;
+}
+.hotel-name {
+    font-weight: 700;
+    padding-left: 0.5em;
+    margin-bottom: -0.5em;
+    width: 11.08em;
+    color: black;
+}
+
+.hotel-price {
+    font-size: 0.8em;
+    padding-left: 0.6em;
+    color: black;
+}
+
+.bluestar-one {
+    color: #0065FC;
+    font-size: 0.70em;
+    margin-left: 0.60em;
+    margin-bottom: 0.5em;
+    position: relative;
+    bottom: 0.8em;
+}
+
+.bluestar {
+    color: #0065FC;
+    font-size: 0.70em;
+    position: relative;
+    bottom: 0.8em;  
+}
+.greystar {
+    color: #e0dfdf;
+    font-size: 0.70em;
+    position: relative;
+    bottom: 0.8em;  
+}
+
+#show-more {
+    text-decoration: none;
+    color: black;
+}
+
+#show-more:visited {
+    color: initial;
+}
+
+/* most popular */
+.mostpopular {
+    background-color: #F2F2F2;
+    border-radius: 2em;
+    padding: 1em 2em 2em 2em;
+    height: 35.5em;
+}
+
+.chart {
+    margin-left: 6em;
+}
+
+.popular-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 29.8em;
+    
+}
+
+.popular-link {
+    text-decoration: none;
+}
+
+.popular-hotel:hover {
+    box-shadow: 0 0 0.5em 0.05em #3f3f3f;
+}
+
+.popular-link:visited {
+    color: initial;
+}
+
+.popular-hotel {
+    background-color: white;
+    height: 9em;
+    width: 20.6em;
+    border-radius: 1em;
+    box-shadow: 0 0 0.5em 0.05em #a3a3a3;
+}
+.popular-images {
+    width: 7.5em;
+    height: 8.2em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 0.3em;
+    object-fit: cover;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    margin-bottom: -1em;
+}
+
+.popular-text {
+    float: right;
+    position: relative;
+    right: 1.2em;
+}
+
+/* --- PART THREE - ACTIVITIES --- */
+
+.activities-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4em;
+}
+
+.column-container-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.column-container-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#Old-Port {
+    background-color: white;
+    width: 18em;
+    height: 30.5em;
+    border-radius: 1em;
+    box-shadow: 0 0 0.5em 0.05em #a3a3a3;
+}
+#Pomegues-Fort {
+    background-color: white;
+    width: 18em;
+    height: 19em;
+    border-radius: 1em;
+    box-shadow: 0 0 0.5em 0.05em #a3a3a3;
+}
+#Friolus-Island {
+    background-color: white;
+    width: 18em;
+    height: 9em;
+    border-radius: 1em;
+    box-shadow: 0 0 0.5em 0.05em #a3a3a3;
+}
+#Calanques-National-Park {
+    background-color: white;
+    width: 18em;
+    height: 30.5em;
+    border-radius: 1em;
+    box-shadow: 0 0 0.5em 0.05em #a3a3a3;
+}
+#Notre-Dame-de-la-Garde {
+    background-color: white;
+    width: 18em;
+    height: 14em;
+    border-radius: 1em;
+    box-shadow: 0 0 0.5em 0.05em #a3a3a3;
+}
+#Longchamp-Park {
+    background-color: white;
+    width: 18em;
+    height: 14em;
+    border-radius: 1em;
+    box-shadow: 0 0 0.5em 0.05em #a3a3a3;
+}
+
+#Old-Port:hover, #Pomegues-Fort:hover, #Friolus-Island:hover, 
+#Calanques-National-Park:hover, #Notre-Dame-de-la-Garde:hover, 
+#Longchamp-Park:hover {
+        box-shadow: 0 0 0.5em 0.05em #3f3f3f;
+}
+
+.oldport-images {
+    width: 18em;
+    height: 27.5em;
+    object-fit: cover;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+.pomegues-images {
+    width: 18em;
+    height: 16em;
+    object-fit: cover;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+.calanques-images {
+    width: 18em;
+    height: 27.5em;
+    object-fit: cover;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+.notredame-images {
+    width: 18em;
+    height: 11em;
+    object-fit: cover;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+.friolus-images {
+    width: 18em;
+    height: 6em;
+    object-fit: cover;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+.longchamp-images {
+    width: 18em;
+    height: 11em;
+    object-fit: cover;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+.activity-name {
+    color: black;
+    font-weight: 700;
+    padding-left: 1em;
+    margin-top: 0.6em;
+}
+
+/* --- PART FOUR - FOOTER --- */
+
+footer {
+    background-color: #F2F2F2;
+    position: relative;
+    margin: 0;
+    height: 11em;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 60em;
+    padding-left: 2.1875em;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.8em;
+}
+
+.footer-link:visited {
+    color: initial;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.p-footer {
+    margin-bottom: -0.8em;
+}
