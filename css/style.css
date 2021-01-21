@@ -1,3 +1,7 @@
+html {
+    font-size:100%;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0em;
@@ -12,9 +16,14 @@ header, nav, section {
 
 .top-container {
     display: flex;
-    justify-content:space-between;
+    /* justify-content:space-between; */
     align-items:center;
     flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+header {
+    flex-grow: 6;
 }
 
 nav {
@@ -22,6 +31,7 @@ nav {
     flex-direction: row;
     justify-content: flex-end;
     flex-wrap: wrap;
+    flex-grow: 2;
 }
 
 .nav-link {
@@ -29,7 +39,7 @@ nav {
     font-weight: 500;
     text-decoration: none;
     color: gray;
-    align-self: flex-end;
+    /* align-self: flex-end; */
     border: none;
     padding: 2.78em;
 }
@@ -39,7 +49,7 @@ nav {
     border-width: 0.18em;
     padding: 2.6em;
     color: #0065FC;
-    align-self: flex-end;  
+    /* align-self: flex-end;   */
 }
 
 #sign-up {
@@ -49,6 +59,7 @@ nav {
     font-weight: bold;
     align-self: flex-end;
     padding: 2.78em;
+    flex-grow: 1;
 }
 
 /* --- PART ONE - INTRO&SEARCH --- */
@@ -512,18 +523,68 @@ footer {
 @media all and (max-device-width: 480px) {
 
     body {
-        width: 480px;
-        margin: 0px;
+        width: 100%;
+        font-size: 1rem;
     }
+
+    .logo, section {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    header, nav, section {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .intro, .search-container, .filter-container,
+    .infocontainer, #Activities-anchor, .activities-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /*---HEADER & NAVIGATION BAR---*/
+
     .top-container {
-        
-        width: 480px;
+        margin-top: 5%;
+        width: 100%;
         align-items: flex-start;
-  }
+    }
     nav {
         margin: 0;
-        flex-direction: column;
-  }
+        flex-direction: row;
+        order: 3;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    #accommodations-nav {
+        flex-grow: 1;
+        text-align: center;
+        padding: 1.8em 0 1em 1.155em;
+    }
+
+    #activities-nav {
+        flex-grow: 2;
+        text-align: center;
+        padding: 1.8em 1.155em 1em 0;
+    }
+
+    .nav-link {
+        
+        border-bottom: #F2F2F2;
+        border-style: none none solid none;
+        border-width: 0.18em;
+        color: black;
+    }
+
+    .nav-link:hover {
+        border-bottom: #0065FC;
+        border-style: none none solid none;
+        border-width: 0.18em;
+        padding: 2.6em;
+        color: #0065FC;
+    }
 
     #logo {
         order: 1;
@@ -534,31 +595,50 @@ footer {
         font-size: 1em;
         align-self: none;
         padding: 1em;
+        text-align: right;
   }
 
-    .nav-link {
-        order: 3;
+    /* --- PART ONE - INTRO&SEARCH --- */
+
+    /* intro */
+    
+
+    #sub-intro {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    color: grey;
+    font-size: 0.8em;
+    }
+    /* search bar */
+    .search-container {
+        justify-content: center;
     }
 
-    .intro, .search-container, .filter-container,
-    .infocontainer, #Activities-anchor, .activities-container {
-        padding-left: 2.1875em;
+    .search-box {
+        width: 70%;
+        font-size: 1.08em;
+        padding: 0.8em;
+    }
+
+    .mapmarker {
+        padding: 1em 0.8em;
+        width: 1.8em;
     }
 
     .search-button {
-        background-color: #0065fc;
         border-radius: 0.8em;
         color: transparent;
-        font-size: 1em;
-        padding: 0 0 0.2em 0;
-        width: 2.5em;
-        text-align: center;
+        padding: 0 0 0.2em 1em;
+        width: 2em;
+        text-align: initial;
     }
 
     .search-icon {
         color: white;
-        align-self: center;
     }
+
+    /* filters*/
     .filter-container {
         flex-direction: column;
         align-items: flex-start;
@@ -645,11 +725,11 @@ footer {
 
     footer {
         height: 20em;
-        width: 480px;
+        width: 100%;
     }
 
     .footer-container {
         flex-direction: column;
-        width: 445px;
+        width: 100%;
     }
 }
