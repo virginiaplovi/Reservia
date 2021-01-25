@@ -16,7 +16,6 @@ header, nav, section {
 
 .top-container {
     display: flex;
-    /* justify-content:space-between; */
     align-items:center;
     flex-wrap: wrap;
     flex-basis: 100%;
@@ -689,10 +688,6 @@ footer {
     
     .popular-hotel {
         width: 100%;
-    }
-
-    .popular-text {
-        margin-left: 3%;
     }
 
     /* accommodations */
