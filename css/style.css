@@ -355,9 +355,8 @@ h2 {
 }
 
 .popular-text {
-    float: right;
-    position: relative;
-    right: 1.2em;
+    display: inline-block;
+    position: absolute;
 }
 
 /* --- PART THREE - ACTIVITIES --- */
@@ -527,18 +526,23 @@ footer {
         font-size: 1rem;
     }
 
-    .logo, section {
+    .logo {
         margin-left: 5%;
         margin-right: 5%;
     }
 
-    header, nav, section {
+    header, nav {
         margin-left: 0;
         margin-right: 0;
     }
+    
+    section {
+        margin: 0px;
+        width: 100%;
+    }
 
     .intro, .search-container, .filter-container,
-    .infocontainer, #Activities-anchor, .activities-container {
+     #Activities-anchor, .activities-container {
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -586,7 +590,7 @@ footer {
         color: #0065FC;
     }
 
-    #logo {
+    .logo {
         order: 1;
   }
 
@@ -647,43 +651,68 @@ footer {
         margin-bottom: 0.8em;
     }
 
+    /* info */
+    .infocontainer {
+        padding-left: 5%;
+    }
+    
     #infotext {
         font-size: 1em;
     }
 
-    section {
-        margin: 0px;
-    }
+    /* --- PART TWO - ACCOMMODATIONS&MOSTPOULAR --- */
 
     .article-one-container {
         flex-direction: column;
+        width: 100%;
     }
 
+    /* most popular */
     .mostpopular {
         order: 1;
         border-radius: 0;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .chart {
+        margin-left: 40%;
     }
 
     .popular-container {
-        width: auto;
+        width: 90%;
         height: auto;
+        margin: 0 auto;
+    }
+
+    .popular-link {
+        margin-bottom: 1.5em;
     }
     
     .popular-hotel {
-        width: 21em;
+        width: 90%;
     }
 
+    /* accommodations */
     .accommodations {
         order: 2;
         background-color: transparent;
         border-radius: 0;
         height: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    .section-title {
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .hotel-container {
         flex-direction: column;
         width: auto;
         height: auto;
+        padding: 5%;
     }
 
     .hotel {
@@ -730,6 +759,6 @@ footer {
 
     .footer-container {
         flex-direction: column;
-        width: 100%;
+        width: 90%;
     }
 }
