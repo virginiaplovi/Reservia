@@ -161,7 +161,7 @@ h2 {
 
 .lowcost:hover, .family:hover, .romantic:hover, .pets:hover {
     background-color: #DEEBFF;
-    border: solid 0.13em #DEEBFF;
+    border: transparent 0.13em #deebff00;
     box-shadow: 0 0 0.3em 0.03em #a3a3a3;
 }
 
@@ -513,7 +513,7 @@ footer {
 
 /* mobile device */
 
-@media all and (max-device-width: 480px) {
+@media all and (max-width: 480px) {
 
     body {
         width: 100%;
