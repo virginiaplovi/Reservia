@@ -161,8 +161,7 @@ h2 {
 
 .lowcost:hover, .family:hover, .romantic:hover, .pets:hover {
     background-color: #DEEBFF;
-    border: transparent 0.13em #deebff00;
-    box-shadow: 0 0 0.3em 0.03em #a3a3a3;
+    box-shadow: 0 0 0.3em 0.03em #a3a3a33a;
 }
 
 .lowcost:visited, .family:visited, .romantic:visited, .pets:visited {
@@ -226,15 +225,11 @@ h2 {
     margin-bottom: 2.8em;
 }
 
-.hotel-link {
-    text-decoration: none;
-}
-
 .hotel:hover {
     box-shadow: 0 0 0.5em 0.05em #3f3f3f;
 }
 
-.hotel-link:visited {
+.hotel:visited {
     color: initial;
 }
 
@@ -243,6 +238,7 @@ h2 {
     width: 15.3em;
     border-radius: 1em;
     box-shadow: 0 0 0.5em 0.05em #a3a3a3;
+    text-decoration: none;
 }
 .hotel-images {
     width: 14.7em;
@@ -259,7 +255,6 @@ h2 {
     font-weight: 700;
     padding-left: 0.5em;
     margin-bottom: -0.5em;
-    width: 11.08em;
     color: black;
 }
 
@@ -335,6 +330,8 @@ h2 {
     border-radius: 1em;
     box-shadow: 0 0 0.5em 0.05em #a3a3a3;
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
 }
 .popular-images {
     width: 7.5em;
@@ -346,11 +343,6 @@ h2 {
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
     margin-bottom: -1em;
-}
-
-.popular-text {
-    display: inline-block;
-    position: absolute;
 }
 
 /* --- PART THREE - ACTIVITIES --- */
@@ -373,6 +365,14 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.activities-link {
+    text-decoration: none;
+}
+
+.activities-link:visited {
+    color: initial;
 }
 
 #Old-Port {
@@ -606,6 +606,8 @@ footer {
     /* search bar */
     .search-container {
         justify-content: center;
+        width: 80%;
+        margin: 1.8em auto;
     }
 
     .search-box {
@@ -643,6 +645,7 @@ footer {
     /* info */
     .infocontainer {
         padding-left: 5%;
+        width: 95%;
     }
 
     #infotext {
@@ -1044,10 +1047,6 @@ footer {
         padding-right: 5%;
     }
 
-    .logo {
-        padding-left: 7.5%;
-    }
-
     /* --- PART ONE - INTRO&SEARCH --- */
 
     /* filters*/
@@ -1100,6 +1099,7 @@ footer {
     .popular-hotel {
         width: 30%;
         height: 85%;
+        flex-direction: column;
     }
 
     .popular-images {
@@ -1120,13 +1120,10 @@ footer {
     /* accommodations */
     .accommodations {
         order: 2;
-        background-color: transparent;
-        border-radius: 0;
         height: auto;
-        width: 100%;
+        width: 96%;
         padding: 0;
-        margin-top: 1em;
-        margin-bottom: 0.4em;
+        margin: 1em auto;
     }
 
     .section-title {
@@ -1135,39 +1132,58 @@ footer {
     }
 
     .hotel-container {
-        flex-direction: column;
-        width: 65%;
+        width: 90%;
         height: auto;
         margin: 0 auto;
     }
 
     .hotel {
         margin-bottom: 1.5em;
-        width: 100%;
+        width: 30%;
+        height: 85%;
     }
 
     .hotel-images {
-        width: 97.6%;
-        height: 8em;
+        width: 96%;
+        height: 7em;
         object-position: 50% 60%;
     }
 
     #show-more {
-        padding-left: 17.5%
+        padding-left: 5%
     }
 
     /* --- PART THREE - ACTIVITIES --- */
 
     .activities-container {
-        flex-direction: column;
-        width: 65%;
+        width: 90%;
         margin: 0 auto;
+    }
+
+    .column-container-one {
+        flex-direction: row;
+        width: 100%;
+        order: 3;
+    }
+
+    .column-container-two {
+        flex-direction: row;
+        width: 100%;
+        order: 4;
+    }
+
+    #Old-Port {
+        order: 1;
+    }
+
+    #Calanques-National-Park {
+        order: 2;
     }
 
     #Old-Port, #Pomegues-Fort, #Friolus-Island,
     #Calanques-National-Park, #Notre-Dame-de-la-Garde,
     #Longchamp-Park {
-        width: 100%;
+        width: 45%;
         height: 11em;
         border-radius: 1em;
         margin-bottom: 1.5em;
@@ -1189,7 +1205,7 @@ footer {
 
     .footer-container {
         width: 70%;
-        padding-left: 17.5%;
+        padding-left: 5%;
     }
 
     .p-footer {
